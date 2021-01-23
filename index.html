@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: auto;
+            display: grid;
+
+        }
+        .container1 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 40px;
+            row-gap: 45px;
+        }
+        .card {
+            /*width: 90px;*/
+            height: 80px;
+            border-radius: 10%;
+            box-shadow: 2px 2px 6px gray;
+            overflow: hidden;
+        }
+        .slika {
+            height: 80%;
+            background-color: rgb(154, 129, 247);
+            background-image: url("placeholder-image.png");
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+          
+        }
+        .text {
+            line-height: 100%;
+            text-align: center;
+            background-color: rgb(243, 240, 240);
+        }
+        .text p {
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.7em;
+        }
+        .container1 + p {
+            margin-top: 50px;
+           
+        }
+        @media screen and (max-width: 768px){ 
+            .container1 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media screen and (max-width: 470px){ 
+            .container1 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .container1 + p {
+                 display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Gallery heading</h2>
+        <div class="container1">
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="slika"></div>
+                <div class="text">
+                    <p>Image Title</p>
+                </div>
+            </div>    
+        </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus officiis sequi vel illum cum placeat, voluptatibus fuga ipsa rerum aperiam molestiae vero blanditiis laboriosam commodi doloremque nisi consequuntur quasi consectetur numquam deleniti incidunt architecto soluta aliquam expedita. Aperiam, neque vitae vero optio nobis corporis impedit illo molestias ipsa amet, adipisci, sequi non! Quae ab perferendis impedit quibusdam vero. Perferendis temporibus iure earum placeat, vitae beatae! Excepturi itaque ea ex sit reiciendis vel. Voluptas necessitatibus, ex illum temporibus fuga quaerat, quibusdam molestiae, maxime ratione soluta culpa veniam modi laudantium reprehenderit in quae commodi. Maiores, asperiores? Vel quis sit nostrum repellat fugiat?
+    </p>
+</body>
+</html>
